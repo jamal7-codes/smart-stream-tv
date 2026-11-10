@@ -1,53 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smart Stream TV</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-    <header>
-         <div class="flex items-center p-4 gap-3 relative w-full ">
+<body class="bg-[#0B1020] text-[#F8FAFC] min-h-screen">
+
+    <!-- header -->
+    <header class="bg-[#151D33] border-b border-[#293550]">
+        <div class="flex items-center p-4 gap-4">
             <img class="w-10" src="iptv-stream.webp" alt="logo">
-            <h1>Smart Stream</h1>
-            <input class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-gray-400" type="text" placeholder="Search...">
+
+            <h1 class="font-bold text-xl whitespace-nowrap">
+                Smart Stream
+            </h1>
+
+            <input
+                class="w-full px-4 py-2 bg-[#202B45] text-white border border-[#35425F] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7C5CFC] placeholder-gray-400"
+                type="text"
+                placeholder="Search channels..."
+            >
         </div>
     </header>
-    <main class="flex flex-col md:flex-row gap-4">
+ 
 
-       
-     
-    
+    <main class="flex flex-col md:flex-row gap-4 p-4">
 
-        <aside class="w-full md:w-1/3 bg-gray-500 overflow-x-auto md:overflow-y-auto md:max-h-screen"  >
+        <!-- aside -->
+        <aside class="bg-[#151D33] w-full md:w-1/3 rounded-xl p-3 overflow-x-auto md:overflow-y-auto md:max-h-screen">
 
-              <div class="flex md:flex-col gap-3">
-            <div class="flex-shrink-0 bg-white p-4">channel 1</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 2</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 3</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 4</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 5</div>
-             <div class="flex-shrink-0 bg-white p-4">channel 6</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 7</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 8</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 9</div>
-            <div class="flex-shrink-0 bg-white p-4">channel 10</div>
-            
-            
+            <div id="channel-list" class="flex md:flex-col gap-3">
 
-</div>
+
+
+            </div>
         </aside>
+ 
+         <!-- preview -->
+        <section class="w-full md:flex-1 bg-[#151D33] p-4 rounded-xl">
 
-        <section class="w-full md:flex-1 bg-gray-300  p-4">
-            <img class="h-64 object-cover rounded-lg" src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="stream preview">
+            <div class="relative">
+                <img
+                    class="w-full aspect-video object-cover rounded-xl"
+                    src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?q=80&w=1172&auto=format&fit=crop"
+                    alt="Stream preview"
+                >
 
-            <h2 class="font-bold">2M</h2>
-       <p>is a Moroccan free-to-air television network. </p>
+                <span class="absolute top-3 left-3 bg-[#20C997] text-[#0B1020] text-xs font-bold px-3 py-1 rounded-full">
+                    LIVE
+                </span>
+            </div>
+
+            <h2 class="font-bold text-2xl mt-4">2M</h2>
+
+            <p class="text-gray-400 mt-2">is a Moroccan television network.</p>
 
         </section>
+
     </main>
-    
+
+    <script type="module" src="js/app.js"></script>
+
 </body>
 </html>
