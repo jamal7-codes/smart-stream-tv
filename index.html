@@ -12,14 +12,14 @@
 
     <!-- header -->
     <header class="bg-[#151D33] border-b border-[#293550]">
-        <div class="flex items-center p-4 gap-4">
+        <div class="flex flex-col sm:flex-row items-center p-4 gap-4 ">
             <img class="w-10" src="iptv-stream.webp" alt="logo">
 
             <h1 class="font-bold text-xl whitespace-nowrap">
                 Smart Stream
             </h1>
 
-            <input
+            <input id="search-input"
                 class="w-full px-4 py-2 bg-[#202B45] text-white border border-[#35425F] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#7C5CFC] placeholder-gray-400"
                 type="text"
                 placeholder="Search channels..."
@@ -31,9 +31,30 @@
     <main class="flex flex-col md:flex-row gap-4 p-4">
 
         <!-- aside -->
-        <aside class="bg-[#151D33] w-full md:w-1/3 rounded-xl p-3 overflow-x-auto md:overflow-y-auto md:max-h-screen">
+        <aside class="bg-[#151D33] w-full md:w-1/3 rounded-xl p-3 min-w-0">
 
-            <div id="channel-list" class="flex md:flex-col gap-3">
+            <!-- category -->
+      <div class="category-btn" class="flex flex-wrap gap-5 mb-6  ">
+
+    <button class="category-btn bg-[#202B45] hover:bg-[#7C5CFC] text-white px-4 py-2 rounded-lg cursor-pointer transition "
+        data-category="All">All</button>
+
+    <button class="category-btn bg-[#202B45] hover:bg-[#7C5CFC] text-white px-4 py-2 rounded-lg cursor-pointer transition "
+        data-category="DOCUMENTAIRE">Documentaire</button>
+
+    <button class="category-btn bg-[#202B45] hover:bg-[#7C5CFC] text-white px-4 py-2 rounded-lg cursor-pointer transition "
+        data-category="SPORT">Sport</button>
+
+    <button class="category-btn bg-[#202B45] hover:bg-[#7C5CFC] text-white px-4 py-2 rounded-lg cursor-pointer transition "
+        data-category="NATIONAL">National</button>
+
+    <button class="category-btn bg-[#202B45] hover:bg-[#7C5CFC] text-white px-4 py-2 rounded-lg cursor-pointer transition "
+        data-category="DIVERTISSEMENT">Divertissement</button>
+
+</div>
+
+
+            <div id="channel-list" class="overflow-x-auto mt-4 md:overflow-x-hidden md:overflow-y-auto">
 
 
 
@@ -43,8 +64,8 @@
          <!-- preview -->
         <section class="w-full md:flex-1 bg-[#151D33] p-4 rounded-xl">
 
-            <div class="relative">
-                <img
+            <div  class="relative">
+                <img id="preview-image"
                     class="w-full aspect-video object-cover rounded-xl"
                     src="https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?q=80&w=1172&auto=format&fit=crop"
                     alt="Stream preview"
@@ -55,9 +76,9 @@
                 </span>
             </div>
 
-            <h2 class="font-bold text-2xl mt-4">2M</h2>
+            <h2 id="preview-title" class="font-bold text-2xl mt-4">2M</h2>
 
-            <p class="text-gray-400 mt-2">is a Moroccan television network.</p>
+            
 
         </section>
 
