@@ -5,20 +5,20 @@ export const channelsData = [
     {
         id: "1",
         channelNumber: "1057",
-        name: "FR - DISCOVERY ID FHD",
+        name: "AR -Al Jazzera HD",
         category: "DOCUMENTAIRE",
-        logo: "https://commons.wikimedia.org/wiki/Special:FilePath/InvestigationDiscoveryLogo2020.svg",
+        logo: "https://imgs.search.brave.com/p9QYk43tBRnNEfpT_i3lGI7gCQ6ydaIaCRsqemFRP34/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2FsLWphemVl/cmEtbG9nby1wbmct/ZmlsZS1hbC1qYXpl/ZXJhLWxvZ28tanBn/LTI3MTcuanBn",
         previewImage: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800",
-        video: "https://www.w3schools.com/html/mov_bbb.mp4"
+        video: "https://live-hls-web-aja.getaj.net/AJA/index.m3u8"
     },
     {
         id: "2",
         channelNumber: "1058",
-        name: "FR - ARTE HD",
+        name: "Media TV",
         category: "DOCUMENTAIRE",
-        logo: "https://commons.wikimedia.org/wiki/Special:FilePath/Artehd.png",
+        logo: "https://imgs.search.brave.com/f9BYc50sbKQWe_MPQWKfZ9nUNL3mlD_fCZeZDE3tj3Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2h1dHRlcnN0b2Nr/LmNvbS9pbWFnZS12/ZWN0b3IvbWVkaWEt/dHYtbG9nby1kZXNp/Z24tdmVjdG9yLTYw/MG53LTEyMjAzMjMx/ODkuanBn",
         previewImage: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800",
-        video: "https://www.w3schools.com/html/movie.mp4"
+        video: "https://cdn.live.easybroadcast.io/abr_corp/83_medi1tv-maghreb_jnbspmg/playlist.m3u8"
     },
     {
         id: "3",
