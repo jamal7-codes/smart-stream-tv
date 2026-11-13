@@ -30,7 +30,7 @@
     <main class="flex flex-col md:flex-row gap-4 p-4">
 
         <!-- aside -->
-        <aside class="bg-[#151D33] w-full md:w-1/3 rounded-xl p-3 min-w-0">
+        <aside class="bg-[#151D33] flex flex-col fixed w-full h-full md:w-1/3 rounded-xl p-3 min-w-0">
 
             <!-- category -->
             <div class=" flex flex-wrap gap-3 mb-6">
@@ -58,7 +58,7 @@
             </div>
 
 
-            <div id="channel-list" class="overflow-y-auto mt-4 md:overflow-y-auto">
+            <div id="channel-list" class="w-full h-full overflow-y-auto scrollbar-none  mt-4 md:overflow-y-auto">
 
 
 
@@ -66,12 +66,13 @@
         </aside>
 
         <!-- preview -->
-        <section class="w-full md:flex-1 bg-[#151D33] p-4 rounded-xl">
+        <section class="w-full ml-125 md:flex-1 bg-[#151D33] p-4 rounded-xl">
 
             <div class="relative">
 
-                <video autoplay id="preview-video" class="w-full aspect-video  object-cover rounded-xl bg-black" controls
-                    playsinline preload="metadata" aria-label="Selected channel video">
+                <video src="https://media.w3.org/2010/05/sintel/trailer.mp4" id="preview-video"
+                    class="w-full aspect-video autoplay object-cover rounded-xl bg-black" controls playsinline
+                    preload="metadata" aria-label="Selected channel video">
                     Your browser does not support HTML video.
                 </video>
                 <!-- <img id="preview-image" class="w-full aspect-video object-cover rounded-xl"

@@ -14,7 +14,7 @@ export function search(channelsData) {
 
     const searchTermLower = searchTerm.toLowerCase();
     return channelsData.filter(channel => {
-
+ 
       return channel.name.toLowerCase().includes(searchTermLower);
 
     });
